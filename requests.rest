@@ -1,0 +1,45 @@
+GET http://localhost:3000/api/posts
+
+###
+GET http://localhost:3000/api/posts?limit=2
+
+###
+GET http://localhost:3000/api/posts/4
+
+###
+POST http://localhost:3000/api/posts
+
+###
+PUT http://localhost:3000/api/post/:id
+
+###
+DELETE http://localhost:3000/api/post/:id
+
+###
+POST http://localhost:3001/blogs/new
+Content-Type: application/json
+
+{
+  "_id":"1234",
+  "title": "Nice chicha vlog",
+  "authors":"venkat",
+  "content":"Very long long ki  blog",
+ "publishedAt": null
+}
+###
+GET http://localhost:3001/blogs
+
+###
+GET http://localhost:3001/blogs/66b4fa806ed0e92ed1c75bde
+
+
+###
+PATCH http://localhost:3001/blogs/66b4fa806ed0e92ed1c75bde
+Content-Type:application/json
+
+{
+"title":"sai's new vlog and just started"
+}
+
+###
+DELETE  http://localhost:3001/blogs/66b4fa806ed0e92ed1c75bde
