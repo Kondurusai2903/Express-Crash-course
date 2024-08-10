@@ -1,0 +1,44 @@
+GET http://localhost:3000/api/posts
+
+###
+GET http://localhost:3000/api/posts?limit=2
+
+###
+GET http://localhost:3000/api/posts/4
+
+###
+POST http://localhost:3000/api/posts
+
+###
+PUT http://localhost:3000/api/post/:id
+
+###
+DELETE http://localhost:3000/api/post/:id
+
+###
+POST http://localhost:3000/blogs/new
+Content-Type: application/json
+
+{
+  "title": "The dark nights",
+  "authors":"konduru sai",
+  "content":"About the real life of humans",
+ "publishedAt": null
+}
+###
+GET http://localhost:3000/blogs
+
+###
+GET http://localhost:3000/blogs/66b4fa806ed0e92ed1c75bde
+
+
+###
+PATCH http://localhost:3000/blogs/66b4fa806ed0e92ed1c75bde
+Content-Type:application/json
+
+{
+"title":"sai's new vlog and just started"
+}
+
+###
+DELETE  http://localhost:3000/blogs/66b4fa806ed0e92ed1c75bde
