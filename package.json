@@ -1,18 +1,20 @@
 {
-  "name": "express-crash",
+  "name": "18-08-24-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch --env-file=.env index.js"
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "18-08-24-blog": "file:",
     "express": "^4.19.2",
-    "express-crash": "file:",
-    "mongoose": "^8.5.2"
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4",
+    "validator": "^13.12.0"
   }
 }
